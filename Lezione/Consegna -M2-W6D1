@@ -1,0 +1,8 @@
+#include <stdio.h>
+
+int main(){
+    printf ("\nBenvenuti\n")
+    printf("Regole del gioco: collezionate il maggior numero di risposte corrette tra le opzioni proposte")
+    
+    return 0
+}
