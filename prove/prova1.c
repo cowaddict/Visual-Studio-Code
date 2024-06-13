@@ -3,7 +3,7 @@
 #include <string.h>
 
 #define numquest 3                  //numero domande
-#define nicklenght 100       //numero caratteri nickname consentiti
+#define nicklenght 800       //numero caratteri nickname consentiti
 
 void presentazione() {   //intro del gioco
     printf ("\nBenvenuto!!\n");
@@ -26,7 +26,7 @@ int main() {
     char domande[numquest][nicklenght] = {  //array di domande
         "Quanti stomaci ha una mucca?\nA) 2\nB) 3\nC) 4\n"
         "Quante ore al giorno mangia una mucca?\nA) 12\nB) 17\nC) 20\n"
-        "Quanti chili, in media, pesa una mucca adulta?\nA) 400\nB)800 C)600"
+        "Quanti chili, in media, pesa una mucca adulta?\nA) 400\nB) 800\nC) 600"
     };
     
     char risposteUtente[numquest] = {'C', 'B', 'C'};  //array di risposte
@@ -38,6 +38,7 @@ int main() {
     if (scelta == 'A' || scelta == 'a') {
         printf("Inserisci il tuo nickname: ");
         scanf("%s", nickname);
+        printf("Rispondi in sequenza premendo INVIO dopo ogni risposta\n\n.");
         
         for (int i = 0; i < numquest; i++) {
             char risposta;
