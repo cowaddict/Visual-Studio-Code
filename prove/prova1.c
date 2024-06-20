@@ -38,7 +38,7 @@ int main() {
     if (scelta == 'A' || scelta == 'a') {
         printf("Inserisci il tuo nickname: ");
         scanf("%s", nickname);
-        printf("Rispondi in sequenza premendo INVIO dopo ogni risposta\n\n.");
+        printf("Rispondi in sequenza premendo INVIO dopo ogni risposta.");
         
         for (int i = 0; i < numquest; i++) {
             char risposta;
